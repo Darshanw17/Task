@@ -3,6 +3,7 @@ export default {
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
+    "./*.{html,js}"
   ],
   theme: {
     extend: {
@@ -57,15 +58,20 @@ export default {
         '38': '9.5rem',
         '55': '13.75rem',
         '88': '22rem',
+        '110': '27.5rem',
         '1069': '1069px',
         '1499': '1499px',
       },
       maxWidth: {
+        '1069': '1069px',
         '1499': '1499px',
       },
       letterSpacing: {
         'wide': '2.78%',
         'wider': '3.57%',
+      },
+      borderWidth: {
+        '3': '3px',
       }
     },
   },
