@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Proxima+Nova:wght@400&display=swap');
+
+@layer base {
+  body {
+    @apply font-poppins bg-background-white text-text-dark;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary-blue text-white px-4 py-2 rounded-none font-medium transition-colors hover:bg-blue-600;
+  }
+  
+  .btn-secondary {
+    @apply bg-background-light text-text-dark px-4 py-2 rounded-none font-medium transition-colors hover:bg-gray-100;
+  }
+  
+  .input-field {
+    @apply border-2 border-gray-200 px-4 py-2 rounded-none font-proxima text-base text-text-dark focus:outline-none focus:border-primary-blue;
+  }
+  
+  .product-card {
+    @apply bg-white border-3 border-border-light rounded-sm overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
+  }
+  
+  .filter-option {
+    @apply flex items-center justify-between cursor-pointer;
+  }
+  
+  .filter-option.active .option-name {
+    @apply text-primary-blue;
+  }
+  
+  .filter-option.active .option-count {
+    @apply text-primary-blue opacity-100;
+  }
+  
+  .color-circle {
+    @apply w-6 h-6 rounded-full cursor-pointer transition-transform hover:scale-110;
+  }
+  
+  .star-filled {
+    @apply text-star;
+  }
+  
+  .star-empty {
+    @apply text-gray-400;
+  }
+  
+  .color-blue {
+    @apply bg-blue-600;
+  }
+  
+  .color-red {
+    @apply bg-red-500;
+  }
+  
+  .color-black {
+    @apply bg-black;
+  }
+  
+  .color-yellow {
+    @apply bg-yellow-400;
+  }
+  
+  .color-pink {
+    @apply bg-pink-500;
+  }
+  
+  .color-gray {
+    @apply bg-gray-200;
+  }
+}

@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Comm - Product List</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Proxima+Nova:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <!-- Logo -->
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg width="51" height="44" viewBox="0 0 51 44" fill="none">
+                        <rect width="51" height="44" rx="16" fill="#40BFFF"/>
+                        <path d="M14.17 12.22H36.84V31.78H14.17V12.22Z" fill="white"/>
+                    </svg>
+                </div>
+                <span class="logo-text">E-Comm</span>
+            </div>
+
+            <!-- Navigation -->
+            <nav class="nav">
+                <a href="#" class="nav-link">HOME</a>
+                <a href="#" class="nav-link">BAG</a>
+                <a href="#" class="nav-link">SNEAKERS</a>
+                <a href="#" class="nav-link">BELT</a>
+                <a href="#" class="nav-link">CONTACT</a>
+            </nav>
+
+            <!-- Cart -->
+            <div class="cart">
+                <div class="cart-icon">
+                    <svg width="22" height="19" viewBox="0 0 22 19" fill="none">
+                        <path d="M5.26 13.15L6.31 14.02L12.63 13.15L13.68 14.02" stroke="#22262A" stroke-width="2" stroke-linecap="round"/>
+                        <path d="M0 0L16.84 10.52" stroke="#22262A" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </div>
+                <div class="cart-info">
+                    <span class="cart-items">0 Items</span>
+                    <span class="cart-total">$0.00</span>
+                </div>
+            </div>
+        </div>
+        <div class="header-divider"></div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Adidas Men Running<br>Sneakers</h1>
+                <p>Performance and design. Taken right to the edge.</p>
+                <a href="#" class="shop-now-btn">SHOP NOW</a>
+            </div>
+            <div class="hero-image">
+                <img src="images/hero-shoe.png" alt="Adidas Men Running Sneakers">
+            </div>
+        </div>
+    </section>
+
+    <main class="main-content">
+      
+        <aside class="sidebar">
+         
+            <div class="filter-section">
+                <h3 class="filter-title">BRAND</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox" checked>
+                        <span class="option-name">Nike</span>
+                        <span class="option-count">99</span>
+                    </label>
+                    <label class="filter-option active">
+                        <input type="checkbox" checked>
+                        <span class="option-name">Nike</span>
+                        <span class="option-count">99</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Adidas</span>
+                        <span class="option-count">99</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Siemens</span>
+                        <span class="option-count">99</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- Color Filter -->
+            <div class="filter-section">
+                <h3 class="filter-title">COLOR</h3>
+                <div class="color-options">
+                    <div class="color-option selected">
+                        <div class="color-circle color-blue"></div>
+                    </div>
+                    <div class="color-circle color-red"></div>
+                    <div class="color-circle color-black"></div>
+                    <div class="color-circle color-yellow"></div>
+                    <div class="color-circle color-pink"></div>
+                    <div class="color-circle color-gray"></div>
+                </div>
+            </div>
+
+            <!-- Price Filter -->
+            <div class="filter-section">
+                <h3 class="filter-title">PRICES</h3>
+                <div class="price-filter">
+                    <span class="price-label">Range: $13.99 - $25.99</span>
+                    <div class="price-slider">
+                        <div class="slider-track">
+                            <div class="slider-range"></div>
+                            <div class="slider-handle left"></div>
+                            <div class="slider-handle right"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hot Deals -->
+            <div class="filter-section">
+                <h3 class="filter-title">Hot Deals</h3>
+                <div class="filter-options">
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Nike</span>
+                        <span class="option-count">2</span>
+                    </label>
+                    <label class="filter-option active">
+                        <input type="checkbox" checked>
+                        <span class="option-name">Airmax</span>
+                        <span class="option-count">48</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Nike</span>
+                        <span class="option-count">14</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Adidas</span>
+                        <span class="option-count">15</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Vans</span>
+                        <span class="option-count">23</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">All Stars</span>
+                        <span class="option-count">1</span>
+                    </label>
+                    <label class="filter-option">
+                        <input type="checkbox">
+                        <span class="option-name">Adidas</span>
+                        <span class="option-count">95</span>
+                    </label>
+                </div>
+            </div>
+
+            <!-- More Button -->
+            <div class="more-section">
+                <button class="more-btn">MORE</button>
+            </div>
+        </aside>
+
+        <!-- Product Grid -->
+        <div class="product-section">
+            <!-- Product Controls -->
+            <div class="product-controls">
+                <span class="items-count">13 Items</span>
+                
+                <div class="sort-controls">
+                    <label class="sort-label">Sort By</label>
+                    <select class="sort-select" aria-label="Sort products by">
+                        <option>Name</option>
+                        <option>Price</option>
+                        <option>Rating</option>
+                    </select>
+                </div>
+
+                <div class="view-controls">
+                    <button class="view-btn grid-view active" title="Grid View" aria-label="Switch to grid view">
+                        <svg width="22" height="17" viewBox="0 0 22 17" fill="none">
+                            <rect width="4" height="4" fill="#40BFFF"/>
+                            <rect x="9" width="4" height="4" fill="#40BFFF"/>
+                            <rect x="18" width="4" height="4" fill="#40BFFF"/>
+                            <rect y="6" width="4" height="4" fill="#40BFFF"/>
+                            <rect x="9" y="6" width="4" height="4" fill="#40BFFF"/>
+                            <rect x="18" y="6" width="4" height="4" fill="#40BFFF"/>
+                            <rect y="13" width="4" height="4" fill="#40BFFF"/>
+                            <rect x="9" y="13" width="4" height="4" fill="#40BFFF"/>
+                            <rect x="18" y="13" width="4" height="4" fill="#40BFFF"/>
+                        </svg>
+                    </button>
+                    <button class="view-btn list-view" title="List View" aria-label="Switch to list view">
+                        <svg width="22" height="17" viewBox="0 0 22 17" fill="none">
+                            <rect width="22" height="2" fill="#C1C8CE"/>
+                            <rect y="7" width="22" height="2" fill="#C1C8CE"/>
+                            <rect y="15" width="22" height="2" fill="#C1C8CE"/>
+                        </svg>
+                    </button>
+                </div>
+
+                <div class="show-controls">
+                    <label class="show-label">Show</label>
+                    <select class="show-select" aria-label="Number of products to show per page">
+                        <option>12</option>
+                        <option>24</option>
+                        <option>48</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Product Grid -->
+            <div class="product-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-1-111e6a.png" alt="Nike Air Max 270 React">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <h3 class="product-name">Nike Air Max 270 React</h3>
+                        <div class="product-price">
+                            <span class="current-price">$299,43</span>
+                            <span class="original-price">$534,33</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-2-4d03e6.png" alt="Nike Air Max 270 React">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <h3 class="product-name">Nike Air Max 270 React</h3>
+                        <div class="product-price">
+                            <span class="current-price">$299,43</span>
+                            <span class="original-price">$534,33</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-3-3d822d.png" alt="Nike Air Max 270 React">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <h3 class="product-name">Nike Air Max 270 React</h3>
+                        <div class="product-price">
+                            <span class="current-price">$299,43</span>
+                            <span class="original-price">$534,33</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-4.png" alt="Nike Air Max 270 React">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <h3 class="product-name">Nike Air Max 270 React</h3>
+                        <div class="product-price">
+                            <span class="current-price">$299,43</span>
+                            <span class="original-price">$534,33</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 5 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-5.png" alt="Nike Air Max 270 React">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <h3 class="product-name">Nike Air Max 270 React</h3>
+                        <div class="product-price">
+                            <span class="current-price">$299,43</span>
+                            <span class="original-price">$534,33</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 6 -->
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="images/product-6.png" alt="Nike Air Max 270 React">
+                        <div class="product-badge">HOT</div>
+                    </div>
+                    <div class="product-info">
+                        <div class="product-rating">
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star filled">★</span>
+                            <span class="star">★</span>
+                        </div>
+                        <h3 class="product-name">Nike Air Max 270 React</h3>
+                        <div class="product-price">
+                            <span class="current-price">$299,43</span>
+                            <span class="original-price">$534,33</span>
+                            <span class="discount">24% Off</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination">
+                <button class="page-btn">1</button>
+                <button class="page-btn">2</button>
+                <button class="page-btn active">3</button>
+                <button class="page-btn">4</button>
+                <button class="page-btn">5</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <svg width="39" height="36" viewBox="0 0 39 36" fill="none">
+                            <rect width="39" height="36" rx="16" fill="#40BFFF"/>
+                            <path d="M10.83 9.98H28.15V25.95H10.83V9.98Z" fill="white"/>
+                        </svg>
+                    </div>
+                    <span class="logo-text">E-Comm</span>
+                </div>
+                <p class="footer-description">Since the 1500s, when an unknown printer took a galley of type and scrambled.</p>
+                <p class="footer-lorem">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever.Since the 1500s, when an unknown printer.</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>E-Comm , 4578 Marmora Road, Glasgow D04 89GR</p>
+            </div>
+
+            <div class="footer-section">
+                <h4>Our Offers</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>My Account</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Service</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#" class="social-icon facebook" title="Follow us on Facebook" aria-label="Facebook">
+                        <svg width="8" height="14" viewBox="0 0 8 14" fill="none">
+                            <path d="M7.64 1.94H5.89V0.7C5.89 0.5 6.05 0.34 6.25 0.34H7.64V-1.68H5.89C4.85 -1.68 4 -0.83 4 0.21V1.94H2.61V4.56H4V13.64H5.89V4.56H7.64V1.94Z" fill="#385C8E"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon twitter" title="Follow us on Twitter" aria-label="Twitter">
+                        <svg width="15" height="11" viewBox="0 0 15 11" fill="none">
+                            <path d="M14.62 1.31C14.62 1.31 13.85 1.65 13.08 1.65C12.31 1.65 11.54 1.31 11.54 1.31C11.54 1.31 11.54 2.08 11.54 2.85C11.54 3.62 11.54 4.39 11.54 4.39C11.54 4.39 12.31 4.73 13.08 4.73C13.85 4.73 14.62 4.39 14.62 4.39C14.62 4.39 14.62 3.62 14.62 2.85C14.62 2.08 14.62 1.31 14.62 1.31Z" fill="#03A9F4"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-divider"></div>
+            <div class="footer-bottom-content">
+                <p class="copyright">© 2018 Ecommerce theme by www.bisenbaev.com</p>
+                <div class="payment-methods">
+                    <div class="payment-icon visa"></div>
+                    <div class="payment-icon mastercard"></div>
+                    <div class="payment-icon paypal"></div>
+                    <div class="payment-icon western-union"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
